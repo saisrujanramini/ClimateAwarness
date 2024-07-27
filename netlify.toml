@@ -1,0 +1,3 @@
+[build]
+publish = "public"  # Ensure this directory exists and is correctly specified
+command = "npm run build"
