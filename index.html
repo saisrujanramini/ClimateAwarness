@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="intro-animation">
+        <img id="intro-logo" src="img/logo.png" alt="Intro Logo">
+    </div>
+    <header>
+        <img class="head" src="img/Climate_Awarness-removebg-preview.png">
+        <img class="logo" src="img/logo.png" alt="LOGO">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#data">RT Weather forecast</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#actions">Actions</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+        <p><a href="about.html"><button class="about-btn" type="button">ABOUT US</button></a></p>
+    </header>
+    <main>
+        <h2 class="quote">If the world were a canvas, the climate would be its vibrant hues. Let's come together to preserve its brilliance and ensure its lasting beauty.</h2>
+        <section id="education" class="s1">
+            <a href="education.html" class="full-link">
+                <h2>Education</h2>
+                <h5>Get the knowledge and awareness about our own climate and nature</h5>
+            </a>
+        </section>
+        <section id="data" class="s6">
+            <a href="data.html" class="full-link">
+                <h2>RT Weather forecast</h2>
+                <h5>Get the real-time weather/climate data</h5>
+            </a>
+        </section>
+        <section id="calculator" class="s2">
+            <a href="cal.html" class="full-link">
+                <h2>Carbon Footprint Calculator</h2>
+                <h5>Calculate the amount of carbon being generated</h5>
+            </a>
+        </section>
+        <section id="news" class="s3">
+            <a href="news.html" class="full-link">
+                <h2>News</h2>
+                <h5>Stay updated with what's going on</h5>
+            </a>
+        </section>
+        <section id="actions" class="s4">
+            <a href="actions.html" class="full-link">
+                <h2>Actionable Steps</h2>
+                <h5>Get to know about the necessary precautions</h5>
+            </a>
+        </section>
+        <section id="community" class="s5">
+            <a href="community.html" class="full-link">
+                <h2>Community Forum</h2>
+                <h5>Join and start your hands-on experience with the community</h5>
+            </a>
+        </section>
+        <button id="myBtn" style="display:none;">&#x2191</button>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Email: <a href="mailto:nagavarun.goud.23@gmail.com">nagavarun.goud.23@gmail.com</a></p>
+                <p>Phone: 7032547337</p>
+                <a href="https://www.linkedin.com/in/sai-srujan-ramini-149b97248" target="_blank">
+                    <img src="img/linkedlogo.png" alt="LinkedIn" class="social-logo">linkedin@HASH
+                </a>
+            </div>
+            <div class="quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="education.html#faqs">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p><b>© 2024 HASH. All rights reserved.</b></p>
+            <p>Design by HASH</p>
+        </div>
+        <section id="query" class="query-section">
+            <h2>Send Us Your Queries</h2>
+            <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+                <input type="hidden" name="form-name" value="contact">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </footer>
+    <script>
+            window.onscroll = function() {
+                var btn = document.getElementById("myBtn");
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    btn.style.display = "block"; // Show the button when scrolled down
+                } else {
+                    btn.style.display = "none"; // Hide the button when at the top
+                }
+            };
+
+            document.getElementById("myBtn").onclick = function() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+            };
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            window.location.href = "querie.html";
+        }
+    </script>
+    <script src="scripts.js"></script>
+</body>
+</html>

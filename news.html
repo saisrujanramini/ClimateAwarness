@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Change Awareness</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <header>
+        <h1>THE LATEST NEWS</h1>
+        <h3>Get to know about the latest information about the climarte all over the world</h3>
+    </header>
+
+    <main>
+        <section id="news">
+           
+            <div id="news-articles"></div>
+        </section>
+    </main>
+    <button id="myBtn">&#x2191</button>
+    <script src="scripts.js"></script>
+    <a href="index.html"><button class="Home"><b>&larr;</b></button></a>
+    <button id="myBtn">&#x2191</button>
+    <script>
+        window.onscroll = function() {
+            var btn = document.getElementById("myBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block"; // Show the button when scrolled down
+            } else {
+                btn.style.display = "none"; // Hide the button when at the top
+            }
+        };
+
+        document.getElementById("myBtn").onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        };
+    </script>
+    <a href="index.html"><button class="Home"><b>&larr;</b></button></a>
+    <script src="news.js" defer></script>
+</body>
+</html>
