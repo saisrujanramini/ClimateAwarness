@@ -1,3 +1,12 @@
 [build]
-publish = "public"  # Ensure this directory exists and is correctly specified
-command = "npm run build"
+  publish = "C:\Users\Naga Varun\OneDrive\Desktop\PROJECT\ClimateAwarness"          # Directory to publish (adjust based on your build output)
+  command = "npm run build"   # Command to build your site
+
+[context.production.environment]
+  API_KEY = "abb41ee17bc44e459d3adcb267a6dfd2"  # Add your environment variables here
+
+[context.deploy-preview.environment]
+  API_KEY = "abb41ee17bc44e459d3adcb267a6dfd2e"  # Optional: environment variables for deploy previews
+
+[context.branch-deploy.environment]
+  API_KEY = "abb41ee17bc44e459d3adcb267a6dfd2"  # Optional: environment variables for branch deploys
