@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: url('https://wallpapers.com/images/hd/4k-blue-minimalist-deer-5fc2dalaakntatt7.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #000;
 }
@@ -313,6 +314,7 @@ h1 {
     background-color: #3E8E41;
     opacity: 90%;
 }
+
 
 .full-link {
     position: absolute;
